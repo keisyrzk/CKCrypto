@@ -11,6 +11,13 @@
 		CC8480C12AA9BFE900205098 /* CKCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8480B62AA9BFE800205098 /* CKCrypto.framework */; };
 		CC8480C62AA9BFE900205098 /* CKCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480C52AA9BFE900205098 /* CKCryptoTests.swift */; };
 		CC8480C72AA9BFE900205098 /* CKCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8480B92AA9BFE800205098 /* CKCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC8480D12AA9C06300205098 /* CryptoLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480D02AA9C06300205098 /* CryptoLogic.swift */; };
+		CC8480D32AA9C07B00205098 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480D22AA9C07B00205098 /* CryptoManager.swift */; };
+		CC8480D62AA9DBEA00205098 /* Hashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480D52AA9DBEA00205098 /* Hashes.swift */; };
+		CC8480D82AA9DC5300205098 /* SymetricKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480D72AA9DC5300205098 /* SymetricKey.swift */; };
+		CC8480DA2AA9DE5500205098 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480D92AA9DE5500205098 /* Encryption.swift */; };
+		CC8480DC2AA9DFD500205098 /* EncryptionKeyAgreement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480DB2AA9DFD500205098 /* EncryptionKeyAgreement.swift */; };
+		CC8480DE2AA9E4B400205098 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480DD2AA9E4B400205098 /* PublicKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,23 @@
 		CC8480BA2AA9BFE900205098 /* CKCrypto.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CKCrypto.docc; sourceTree = "<group>"; };
 		CC8480C02AA9BFE900205098 /* CKCryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKCryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8480C52AA9BFE900205098 /* CKCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCryptoTests.swift; sourceTree = "<group>"; };
+		CC8480D02AA9C06300205098 /* CryptoLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoLogic.swift; sourceTree = "<group>"; };
+		CC8480D22AA9C07B00205098 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
+		CC8480D52AA9DBEA00205098 /* Hashes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hashes.swift; sourceTree = "<group>"; };
+		CC8480D72AA9DC5300205098 /* SymetricKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymetricKey.swift; sourceTree = "<group>"; };
+		CC8480D92AA9DE5500205098 /* Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
+		CC8480DB2AA9DFD500205098 /* EncryptionKeyAgreement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionKeyAgreement.swift; sourceTree = "<group>"; };
+		CC8480DD2AA9E4B400205098 /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		CC8480E02AA9EA2C00205098 /* HashesExample.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = HashesExample.md; sourceTree = "<group>"; };
+		CC8480E22AA9EA9500205098 /* SymetricKey_authenticationCode_example.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SymetricKey_authenticationCode_example.md; sourceTree = "<group>"; };
+		CC8480E32AA9EAFE00205098 /* SymetricKey_isAuthenticationCodeValid_example.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SymetricKey_isAuthenticationCodeValid_example.md; sourceTree = "<group>"; };
+		CC8480E52AA9EC4100205098 /* Encryption_encrypt_keyType_example.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Encryption_encrypt_keyType_example.md; sourceTree = "<group>"; };
+		CC8480E62AA9ECA100205098 /* Encryption_encrypt_symmetricKey_example.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Encryption_encrypt_symmetricKey_example.md; sourceTree = "<group>"; };
+		CC8480E72AA9ECCB00205098 /* Encryption_decrypt_example.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Encryption_decrypt_example.md; sourceTree = "<group>"; };
+		CC8480E92AA9EDA300205098 /* EncryptionKeyAgreement_example.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = EncryptionKeyAgreement_example.md; sourceTree = "<group>"; };
+		CC8480EB2AA9EEF900205098 /* PublicKey_sign_example.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PublicKey_sign_example.md; sourceTree = "<group>"; };
+		CC8480EC2AA9EF2F00205098 /* PublicKey_isSigningVerified_example.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PublicKey_isSigningVerified_example.md; sourceTree = "<group>"; };
+		CC8480ED2AA9EF9100205098 /* PublicKey_isSigningValid_example.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PublicKey_isSigningValid_example.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +96,13 @@
 			isa = PBXGroup;
 			children = (
 				CC8480B92AA9BFE800205098 /* CKCrypto.h */,
+				CC8480D22AA9C07B00205098 /* CryptoManager.swift */,
+				CC8480D02AA9C06300205098 /* CryptoLogic.swift */,
+				CC8480DF2AA9EA0E00205098 /* Hashes */,
+				CC8480E12AA9EA6100205098 /* SymetricKey */,
+				CC8480E42AA9EB7300205098 /* Encryption */,
+				CC8480E82AA9ED9500205098 /* EncryptionKeyAgreement */,
+				CC8480EA2AA9EE4C00205098 /* PublicKey */,
 				CC8480BA2AA9BFE900205098 /* CKCrypto.docc */,
 			);
 			path = CKCrypto;
@@ -83,6 +114,56 @@
 				CC8480C52AA9BFE900205098 /* CKCryptoTests.swift */,
 			);
 			path = CKCryptoTests;
+			sourceTree = "<group>";
+		};
+		CC8480DF2AA9EA0E00205098 /* Hashes */ = {
+			isa = PBXGroup;
+			children = (
+				CC8480D52AA9DBEA00205098 /* Hashes.swift */,
+				CC8480E02AA9EA2C00205098 /* HashesExample.md */,
+			);
+			path = Hashes;
+			sourceTree = "<group>";
+		};
+		CC8480E12AA9EA6100205098 /* SymetricKey */ = {
+			isa = PBXGroup;
+			children = (
+				CC8480D72AA9DC5300205098 /* SymetricKey.swift */,
+				CC8480E22AA9EA9500205098 /* SymetricKey_authenticationCode_example.md */,
+				CC8480E32AA9EAFE00205098 /* SymetricKey_isAuthenticationCodeValid_example.md */,
+			);
+			path = SymetricKey;
+			sourceTree = "<group>";
+		};
+		CC8480E42AA9EB7300205098 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				CC8480D92AA9DE5500205098 /* Encryption.swift */,
+				CC8480E52AA9EC4100205098 /* Encryption_encrypt_keyType_example.md */,
+				CC8480E62AA9ECA100205098 /* Encryption_encrypt_symmetricKey_example.md */,
+				CC8480E72AA9ECCB00205098 /* Encryption_decrypt_example.md */,
+			);
+			path = Encryption;
+			sourceTree = "<group>";
+		};
+		CC8480E82AA9ED9500205098 /* EncryptionKeyAgreement */ = {
+			isa = PBXGroup;
+			children = (
+				CC8480DB2AA9DFD500205098 /* EncryptionKeyAgreement.swift */,
+				CC8480E92AA9EDA300205098 /* EncryptionKeyAgreement_example.md */,
+			);
+			path = EncryptionKeyAgreement;
+			sourceTree = "<group>";
+		};
+		CC8480EA2AA9EE4C00205098 /* PublicKey */ = {
+			isa = PBXGroup;
+			children = (
+				CC8480DD2AA9E4B400205098 /* PublicKey.swift */,
+				CC8480EB2AA9EEF900205098 /* PublicKey_sign_example.md */,
+				CC8480EC2AA9EF2F00205098 /* PublicKey_isSigningVerified_example.md */,
+				CC8480ED2AA9EF9100205098 /* PublicKey_isSigningValid_example.md */,
+			);
+			path = PublicKey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8480DA2AA9DE5500205098 /* Encryption.swift in Sources */,
+				CC8480D32AA9C07B00205098 /* CryptoManager.swift in Sources */,
+				CC8480DE2AA9E4B400205098 /* PublicKey.swift in Sources */,
+				CC8480D82AA9DC5300205098 /* SymetricKey.swift in Sources */,
+				CC8480DC2AA9DFD500205098 /* EncryptionKeyAgreement.swift in Sources */,
 				CC8480BB2AA9BFE900205098 /* CKCrypto.docc in Sources */,
+				CC8480D12AA9C06300205098 /* CryptoLogic.swift in Sources */,
+				CC8480D62AA9DBEA00205098 /* Hashes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -351,6 +439,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,6 +471,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,6 +492,7 @@
 		CC8480CE2AA9BFE900205098 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D64RQ5DU57;
@@ -418,6 +509,7 @@
 		CC8480CF2AA9BFE900205098 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D64RQ5DU57;
