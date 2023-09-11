@@ -1,4 +1,3 @@
----
 
 ## **Usage Example**
 
@@ -46,6 +45,5 @@ In this example, we first sign the message using a hypothetical `signWithP256` f
 
 For verification, the `isSigningValid` function is provided with the public key, the signature (private key), the SHA256 hash of the message (digest), and the key type (P256). The function checks if the provided public key and signature are valid P256 representations and then verifies if the signature matches the message digest. If everything is in order, the function returns `true`, indicating a valid signature for P256.
 
----
 
 Note: Keep your private keys safe and never expose them. In cryptographic systems, the private key's security is paramount to ensure data integrity and authenticity.

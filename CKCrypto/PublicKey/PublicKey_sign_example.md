@@ -1,4 +1,3 @@
----
 
 ## **Usage Example**
 
@@ -43,6 +42,5 @@ In this example, the `sign` function is supplied with a message to sign and a sp
 
 By sharing the public key and the signed data, others can confirm that the data hasn't been altered since it was signed and that it was signed using the corresponding private key.
 
----
 
 Note: Always safeguard private keys. If a malicious actor obtains a private key, they can sign data fraudulently. On the other hand, public keys can be shared openly without compromising security.

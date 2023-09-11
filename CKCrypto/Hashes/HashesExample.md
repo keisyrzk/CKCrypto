@@ -1,4 +1,3 @@
----
 
 ## **Usage Example**
 
@@ -36,6 +35,5 @@ This will display the hash value in the console.
 
 The string "Hello, World!" when hashed with SHA-256, produces the output shown. This value remains consistent every time the same input is provided to the hashing function.
 
----
 
 Remember, SHA-256 produces a fixed-size output (32 bytes or 256 bits). If you hash a different string, even if it's just a slight modification, the output will look significantly different.

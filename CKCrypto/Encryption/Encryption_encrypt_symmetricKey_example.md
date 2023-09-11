@@ -1,4 +1,3 @@
----
 
 ## **Usage Example**
 
@@ -45,6 +44,5 @@ In this example, the `encrypt` function is supplied with the data to encrypt, th
 
 Utilizing a pre-defined key can be useful in scenarios where both the sender and the receiver have already exchanged symmetric keys securely, and they need to perform encryption/decryption operations using that same key.
 
----
 
 As always, handle symmetric keys with utmost care. If they get compromised, any data encrypted with them becomes vulnerable to unauthorized decryption. Ensure secure storage and transmission mechanisms for keys.

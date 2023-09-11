@@ -1,4 +1,3 @@
----
 
 ## **Usage Example**
 
@@ -41,6 +40,5 @@ In this example, the `decrypt` function is supplied with the encrypted data, the
 
 It's crucial to remember that using the correct symmetric key for decryption is essential. If a different key is used, or if the key is compromised, the decryption will either fail or yield incorrect results.
 
----
 
 For optimal security, always ensure that the symmetric key used for decryption is the same as the one used for encryption. Any discrepancies can lead to data corruption or failed decryption attempts.

@@ -1,4 +1,3 @@
----
 
 ## **Usage Example**
 
@@ -44,6 +43,5 @@ Is Authentication Code Valid? true
 
 The function `isAuthenticationCodeValid` receives the previously computed authentication code, the original data ("Confidential Message"), the hashing algorithm (in this example, SHA256), and the symmetric key used for generating the authentication code. It then verifies whether the provided authentication code matches with what would be generated using the given data and key. If they match, the function returns `true`, confirming the data's authenticity and integrity; otherwise, it returns `false`.
 
----
 
 Note: HMACs (Hash-based Message Authentication Codes) are beneficial for validating both the data's integrity and authenticity. An HMAC requires a secret key, ensuring only those who possess the key can verify the HMAC for specific data correctly.

@@ -1,4 +1,3 @@
----
 
 ## **Usage Example**
 
@@ -38,6 +37,5 @@ Secret Key: E41D5A15370A63F8BA8A3FE35E7A16F4
 
 The message "Confidential Message" is passed along with the hashing algorithm and key type specifications to the `authenticationCode` function. The function generates an HMAC (Hash-based Message Authentication Code) using the SHA-256 algorithm and a 128-bit secret key. The function then returns both the HMAC value and the secret key.
 
----
 
 Note: HMACs are useful for verifying both the data integrity and the authenticity of a message. It requires a secret key, so only those who possess the key can generate a valid HMAC for a particular piece of data.

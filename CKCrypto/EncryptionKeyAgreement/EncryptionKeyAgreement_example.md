@@ -1,4 +1,3 @@
----
 
 ## **Usage Example**
 
@@ -45,6 +44,5 @@ In this example, the `createSymmetricKey` function is supplied with the client's
 
 This approach ensures that both the client and the app can independently create the same symmetric key without directly sharing it.
 
----
 
 Always remember that the salt used during key derivation should be random and unique for every key derivation operation. It should ideally be stored or communicated securely if it needs to be reused.

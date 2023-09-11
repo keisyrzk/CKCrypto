@@ -1,4 +1,3 @@
----
 
 # CKCrypto Documentation
 
@@ -10,7 +9,6 @@
 - [Symmetric Encryption](#symmetric-encryption)
 - [Public Key Operations](#public-key-operations)
 
----
 
 ## Hashing
 
@@ -22,7 +20,6 @@ This function is used to generate an HMAC authentication code for given data usi
 static func authCode(data: Data, algorithm: HashingAlgorithm, keyType: SymmetricKeyType) -> (data: Data, secretKey: SymmetricKey)
 ```
 
----
 
 ## Symmetric Encryption
 
@@ -50,7 +47,6 @@ This function decrypts the provided encrypted data using a specified symmetric e
 static func getSealedBox(data: Data, encryptionType: EncryptionType, secretKey: SymmetricKey) -> Data?
 ```
 
----
 
 ## Public Key Operations
 
@@ -69,5 +65,3 @@ This function verifies if a given signature is valid for specified data using a 
 ```swift
 static func isSigningValid(publicKey: Data, privateKey: Data, digestData: Data, signingKeyType: SigningKeyType) -> Bool
 ```
-
----

@@ -1,4 +1,3 @@
----
 
 ## **Usage Example**
 
@@ -45,6 +44,5 @@ In this example, we first sign the message using the `sign` function. This yield
 
 For verification, the `isSigningVerified` function is provided with the public key, the signature (private key), the SHA256 hash of the message (digest), and the key type (Curve25519 in this case). It then verifies if the signature is valid for the given message digest. If everything is in order, the function will return `true`, indicating a valid signature.
 
----
 
 Note: It's important to never share or expose the private key used for signing. The private key is sensitive, and its exposure can lead to malicious actors creating fraudulent signatures.
