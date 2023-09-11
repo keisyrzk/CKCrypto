@@ -1,4 +1,4 @@
----
+
 
 ## **Usage Example**
 
@@ -43,6 +43,6 @@ In the example, the function `encrypt` receives the data, the desired encryption
 
 This symmetric key is crucial for decryption, so it's imperative to store it securely, often in secure storage mechanisms like Keychains or Hardware Security Modules. Without the correct key, the encrypted data cannot be decrypted.
 
----
+
 
 Note: It's vital always to be cautious about the handling, storage, and transmission of encryption keys. If an attacker gains access to the encryption key, they can decrypt any data encrypted with that key.
