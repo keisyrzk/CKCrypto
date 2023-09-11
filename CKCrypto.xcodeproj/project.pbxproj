@@ -18,6 +18,11 @@
 		CC8480DA2AA9DE5500205098 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480D92AA9DE5500205098 /* Encryption.swift */; };
 		CC8480DC2AA9DFD500205098 /* EncryptionKeyAgreement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480DB2AA9DFD500205098 /* EncryptionKeyAgreement.swift */; };
 		CC8480DE2AA9E4B400205098 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480DD2AA9E4B400205098 /* PublicKey.swift */; };
+		CC8480EF2AAEF89F00205098 /* HashesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480EE2AAEF89F00205098 /* HashesTests.swift */; };
+		CC8480F12AAEFBBE00205098 /* SymetricKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480F02AAEFBBE00205098 /* SymetricKeyTests.swift */; };
+		CC8480F32AAF00AF00205098 /* EncryptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480F22AAF00AF00205098 /* EncryptionTests.swift */; };
+		CC8480F52AAF02CF00205098 /* EncryptionKeyAgreementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480F42AAF02CF00205098 /* EncryptionKeyAgreementTests.swift */; };
+		CC8480F72AAF05A700205098 /* PublicKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8480F62AAF05A600205098 /* PublicKeyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		CC8480EB2AA9EEF900205098 /* PublicKey_sign_example.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PublicKey_sign_example.md; sourceTree = "<group>"; };
 		CC8480EC2AA9EF2F00205098 /* PublicKey_isSigningVerified_example.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PublicKey_isSigningVerified_example.md; sourceTree = "<group>"; };
 		CC8480ED2AA9EF9100205098 /* PublicKey_isSigningValid_example.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PublicKey_isSigningValid_example.md; sourceTree = "<group>"; };
+		CC8480EE2AAEF89F00205098 /* HashesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashesTests.swift; sourceTree = "<group>"; };
+		CC8480F02AAEFBBE00205098 /* SymetricKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymetricKeyTests.swift; sourceTree = "<group>"; };
+		CC8480F22AAF00AF00205098 /* EncryptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionTests.swift; sourceTree = "<group>"; };
+		CC8480F42AAF02CF00205098 /* EncryptionKeyAgreementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionKeyAgreementTests.swift; sourceTree = "<group>"; };
+		CC8480F62AAF05A600205098 /* PublicKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKeyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +122,11 @@
 			isa = PBXGroup;
 			children = (
 				CC8480C52AA9BFE900205098 /* CKCryptoTests.swift */,
+				CC8480EE2AAEF89F00205098 /* HashesTests.swift */,
+				CC8480F02AAEFBBE00205098 /* SymetricKeyTests.swift */,
+				CC8480F22AAF00AF00205098 /* EncryptionTests.swift */,
+				CC8480F42AAF02CF00205098 /* EncryptionKeyAgreementTests.swift */,
+				CC8480F62AAF05A600205098 /* PublicKeyTests.swift */,
 			);
 			path = CKCryptoTests;
 			sourceTree = "<group>";
@@ -290,7 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8480F72AAF05A700205098 /* PublicKeyTests.swift in Sources */,
 				CC8480C62AA9BFE900205098 /* CKCryptoTests.swift in Sources */,
+				CC8480EF2AAEF89F00205098 /* HashesTests.swift in Sources */,
+				CC8480F32AAF00AF00205098 /* EncryptionTests.swift in Sources */,
+				CC8480F52AAF02CF00205098 /* EncryptionKeyAgreementTests.swift in Sources */,
+				CC8480F12AAEFBBE00205098 /* SymetricKeyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

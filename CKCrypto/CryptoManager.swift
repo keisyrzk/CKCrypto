@@ -26,10 +26,19 @@ public class CryptoManager {
         case SHA512
     }
     
-    public enum SigningKeyType {
+    public enum SigningKeyType: CaseIterable {
         case Curve25519(HashingAlgorithm)
         case P521
         case P384
         case P256
+        
+        public static var allCases: [CryptoManager.SigningKeyType] = [
+            .Curve25519(.SHA256),
+            .Curve25519(.SHA384),
+            .Curve25519(.SHA512),
+            .P521,
+            .P384,
+            .P256
+        ]
     }
 }

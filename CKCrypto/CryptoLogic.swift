@@ -148,17 +148,17 @@ internal extension CryptoManager {
     
     
     /**
-        This function is for creating digital signatures on data. Here's a breakdown:
-
-        The function takes in some data (data) that needs to be signed and the type of key (signingKeyType) that should be used for signing.
-
-        Depending on the type of key specified, the function generates a new signing key pair (both private and public keys).
-
-        After generating the key pair, it hashes the input data using the algorithm specified (SHA256, SHA384, or SHA512) and creates a signature on this hashed data using the private key.
-
-        The function returns the created signature and the public key corresponding to the private key used for signing. This public key can be distributed openly and used to verify the signature in the future, ensuring the data hasn't been tampered with.
+     This function is for creating digital signatures on data. Here's a breakdown:
      
-        In practice, the signer (who possesses the private key) would use this function to sign some data. The verifier (who possesses only the public key) can then check this signature to ensure data authenticity.
+     The function takes in some data (data) that needs to be signed and the type of key (signingKeyType) that should be used for signing.
+     
+     Depending on the type of key specified, the function generates a new signing key pair (both private and public keys).
+     
+     After generating the key pair, it hashes the input data using the algorithm specified (SHA256, SHA384, or SHA512) and creates a signature on this hashed data using the private key.
+     
+     The function returns the created signature and the public key corresponding to the private key used for signing. This public key can be distributed openly and used to verify the signature in the future, ensuring the data hasn't been tampered with.
+     
+     In practice, the signer (who possesses the private key) would use this function to sign some data. The verifier (who possesses only the public key) can then check this signature to ensure data authenticity.
      */
     
     /// Creates a digital signature on the provided data using the specified key type and returns the generated signature and corresponding public key.
@@ -167,45 +167,40 @@ internal extension CryptoManager {
     ///   - data: The input data to be signed.
     ///   - signingKeyType: The type of signing key to use for creating the signature.
     ///
-    /// - Returns: A tuple containing the generated signature (privateKey) and the public key.
-    static func signData(data: Data, with signingKeyType: SigningKeyType) -> (privateKey: Data?, publicKey: Data) {
-
+    /// - Returns: A tuple containing the generated signature and the public key.
+    static func signData(data: Data, with signingKeyType: SigningKeyType) -> (signature: Data?, publicKey: Data) {
+        
         switch signingKeyType {
         case let .Curve25519(algorithm):
+            let signingPrivateKey = Curve25519.Signing.PrivateKey()
+            let signingPublicKeyData = signingPrivateKey.publicKey.rawRepresentation
+            
+            let hashedData: Data
             switch algorithm {
             case .SHA256:
-                let signingPrivateKey = Curve25519.Signing.PrivateKey()
-                let signingPublicKeyData = signingPrivateKey.publicKey.rawRepresentation
-                let digest = SHA256.hash(data: data)
-                return (privateKey: try? signingPrivateKey.signature(for: Data(digest)), publicKey: signingPublicKeyData)
-
+                hashedData = Data(SHA256.hash(data: data))
             case .SHA384:
-                let signingPrivateKey = Curve25519.Signing.PrivateKey()
-                let signingPublicKeyData = signingPrivateKey.publicKey.rawRepresentation
-                let digest = SHA384.hash(data: data)
-                return (privateKey: try? signingPrivateKey.signature(for: Data(digest)), publicKey: signingPublicKeyData)
-
+                hashedData = Data(SHA384.hash(data: data))
             case .SHA512:
-                let signingPrivateKey = Curve25519.Signing.PrivateKey()
-                let signingPublicKeyData = signingPrivateKey.publicKey.rawRepresentation
-                let digest = SHA512.hash(data: data)
-                return (privateKey: try? signingPrivateKey.signature(for: Data(digest)), publicKey: signingPublicKeyData)
+                hashedData = Data(SHA512.hash(data: data))
             }
-
+            
+            return (signature: try? signingPrivateKey.signature(for: hashedData), publicKey: signingPublicKeyData)
+            
         case .P256:
             let signingPrivateKey = P256.Signing.PrivateKey()
             let signingPublicKeyData = signingPrivateKey.publicKey.rawRepresentation
-            return (privateKey: try? signingPrivateKey.signature(for: data).rawRepresentation, publicKey: signingPublicKeyData)
-
+            return (signature: try? signingPrivateKey.signature(for: data).rawRepresentation, publicKey: signingPublicKeyData)
+            
         case .P384:
             let signingPrivateKey = P384.Signing.PrivateKey()
             let signingPublicKeyData = signingPrivateKey.publicKey.rawRepresentation
-            return (privateKey: try? signingPrivateKey.signature(for: data).rawRepresentation, publicKey: signingPublicKeyData)
-
+            return (signature: try? signingPrivateKey.signature(for: data).rawRepresentation, publicKey: signingPublicKeyData)
+            
         case .P521:
             let signingPrivateKey = P521.Signing.PrivateKey()
             let signingPublicKeyData = signingPrivateKey.publicKey.rawRepresentation
-            return (privateKey: try? signingPrivateKey.signature(for: data).rawRepresentation, publicKey: signingPublicKeyData)
+            return (signature: try? signingPrivateKey.signature(for: data).rawRepresentation, publicKey: signingPublicKeyData)
         }
     }
 }

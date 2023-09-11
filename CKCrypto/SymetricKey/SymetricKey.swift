@@ -12,18 +12,19 @@ extension CryptoManager {
     // MARK: Symmetric key
     
     /**
-        Hash-based Message Authentication Code (HMAC) protects against malicious changes by signing the digest with a symmetric cryptographic key. A common use case is signing the digest of a file so the app’s server can check that you’re authorized to upload files.
-
-        “Symmetric key” means the sender and receiver both know the secret key. HMAC uses the secret key to derive inner and outer keys. Then it creates an internal hash from the data and the inner key. Finally, it creates the signature from the internal hash and the outer key.
+     Hash-based Message Authentication Code (HMAC) protects against malicious changes by signing the digest with a symmetric cryptographic key. A common use case is signing the digest of a file so the app’s server can check that you’re authorized to upload files.
      
-        HMAC lets you verify the sender’s identity and the integrity of the data, but doesn’t encrypt the data.
+     “Symmetric key” means the sender and receiver both know the secret key. HMAC uses the secret key to derive inner and outer keys. Then it creates an internal hash from the data and the inner key. Finally, it creates the signature from the internal hash and the outer key.
+     
+     HMAC lets you verify the sender’s identity and the integrity of the data, but doesn’t encrypt the data.
      */
     
     /**
-        `returned:`
-        `data` - signed with `HMAC`
-        `key` - the generated key that has to be the same while validating the input data in example coming from backend
+     `returned:`
+     `data` - signed with `HMAC`
+     `key` - the generated key that has to be the same while validating the input data in example coming from backend
      */
+    
     
     /// Generates an authentication code for the given data.
     ///
@@ -41,14 +42,14 @@ extension CryptoManager {
     // Validate data with authentication code
     
     /**
-        `authenticationCodeData`
-                - original data created with `authenticationCode256`, `authenticationCode384` or `authenticationCode512` method
+     `authenticationCodeData`
+     - original data created with `authenticationCode256`, `authenticationCode384` or `authenticationCode512` method
      
-        `dataToAuthenticate`
-                - data we like to authenticate, it may be data received from the server
+     `dataToAuthenticate`
+     - data we like to authenticate, it may be data received from the server
      
-        `symmetricKey`
-                - a symmetric key to make the comparison possible, the secretKey `must be the same` as the secretKey generated in `authenticationCode256`, `authenticationCode384` or            `authenticationCode512` method
+     `symmetricKey`
+     - a symmetric key to make the comparison possible, the secretKey `must be the same` as the secretKey generated in `authenticationCode256`, `authenticationCode384` or            `authenticationCode512` method
      */
     /// Validates data against the provided authentication code.
     ///
